@@ -1,0 +1,94 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tetse</title>
+
+    </head>
+
+    <body>
+        <p>nome</p>
+        <input type="text" id="name" placeholder="nome">
+        <p>idade</p>
+        <input type="number" name="old" id="old">
+        <p>O numero do mês de nascimento: </p>
+
+        <input type="text" name="numMes" id="numMes">
+
+        <button onclick="meuMes()">enviar</button>
+    <p id="signo"></p>
+
+    <script>
+            function meuMes() {
+                var name1 = document.getElementById('name').value;
+                var idade = document.getElementById('old').value;
+                var mes = parseInt(document.getElementById('numMes').value);
+
+
+                switch (mes) {
+                    case 1: 
+                        document.getElementById("signo").innerHTML = name1 + " o seu signo é: aquario";
+                    break
+                    default: 
+                }
+
+
+            if (!isNaN(mes) && mes === 1 ){
+                console.log('')
+            }
+            else if (!isNaN(mes) && mes === 2) {
+                                document.getElementById("signo").innerHTML = name1+" o seu signo é: peixes";
+
+            }
+             else if (!isNaN(mes) && mes === 3) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: aries";
+
+            }
+             else if (!isNaN(mes) && mes === 4) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: touro";
+
+            }
+             else if (!isNaN(mes) && mes === 5) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: gemeos";
+
+            }
+             else if (!isNaN(mes) && mes === 6) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: cancer";
+
+            }
+             else if (!isNaN(mes) && mes === 7) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: leao";
+
+            }
+             else if (!isNaN(mes) && mes === 8) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: virgem";
+
+            }
+             else if (!isNaN(mes) && mes === 9) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: libra";
+
+            }
+             else if (!isNaN(mes) && mes === 10) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: escorpião";
+
+            }
+             else if (!isNaN(mes) && mes === 11) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: sargitario ";
+
+            }
+             else if (!isNaN(mes) && mes === 12) {
+                document.getElementById("signo").innerHTML = name1+" o seu signo é: capricornio ";
+
+            }
+            else {
+                document.getElementById("signo").innerHTML = "digite um mês valido.";
+
+            }        
+
+
+            }
+
+    </script>
+    </body>
+    </html>

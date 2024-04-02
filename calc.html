@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div>
+        <h1>Calculadora</h1>
+    </div>
+    <p>Valor01</p>
+    <input id="Valor01" type="number">
+    <p>Valor02</p>
+    <input id="Valor02" type="number">
+    <button onclick="kk('+')">+</button>
+    <button onclick="kk('-')">-</button>
+    <button onclick="kk('richard')">*</button>
+    <button onclick="kk('/')">/</button>
+
+    <div id="R">
+    </div>
+    <script>
+        function kk(banana) {
+            let Valor01 = parseInt(document.getElementById("Valor01").value);
+            let Valor02 = parseInt(document.getElementById("Valor02").value);
+            let result;
+            console.log(banana)
+            switch (banana) {
+                case '+':
+                    result = Valor01 + Valor02;
+                    break;
+                case '-':
+                    result = Valor01 - Valor02;
+                    break;
+                case 'richard':
+                    result = Valor01 * Valor02;
+                    break;
+                case '/':
+                    result = Valor01 / Valor02;
+                    break;
+                default:
+                    result = 'Operador inválido';
+            }
+
+            document.getElementById("R").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
